@@ -1,0 +1,2234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Strike: Javascript Event Keycodes</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="shortcut icon" type="image/jpg" href="icons/strike.svg">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<div class="table">
+		<!-- ************************ -->
+		<div class="press_keys">
+			<div class="press_keys_header">
+				<div class="made_by">
+					str&nbsp;<i class="fas fa-bolt"></i>&nbsp;ke
+				</div>
+				<div class="show_all">
+					<span>table</span>
+					<img src="icons/table.png">
+				</div>
+			</div>
+			<div class="pressed">Strike any key</div>
+			<div class="values_cont">
+				<div class="val_box">
+					<div class="e_header">Event.key</div>
+					<div class="e_key e_vals"></div>
+				</div>
+				<div class="val_box">
+					<div class="e_header">Event.code</div>
+					<div class="e_code e_vals"></div>
+				</div>
+				<div class="val_box">
+					<div class="e_header">Event.which</div>
+					<div class="e_which e_vals"></div>
+				</div>
+			</div>
+
+			<!-- ************************ -->
+			<div class="foot_note">
+				Made with love by &nbsp;<a href="https://thealphaknight.com">Williams</a>
+			</div>
+		</div>
+
+
+
+		<!-- ************************ -->
+		<div class="table_inn hide_table">
+			<div class="table_inner">
+				<div class="table_header">
+					<div class="logo_tab">
+						str&nbsp;<i class="fas fa-bolt"></i>&nbsp;ke
+					</div>
+					<div>keycodes</div>
+					<div class="close_table"><i class="far fa-times-circle"></i></div>
+				</div>
+				<div class="table_grid">
+					<div class="row row1">
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">3 --></span>
+								<span>
+									Break
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">8 --></span>
+								<span>
+									Backspace/ Delete
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">9 --></span>
+								<span>
+									Tab
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">12 --></span>
+								<span>
+									Clear
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">13 --></span>
+								<span>
+									Enter
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">16 --></span>
+								<span>
+									Shift
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">17 --></span>
+								<span>
+									Ctrl
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">18 --></span>
+								<span>
+									Alt
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">19 --></span>
+								<span>
+									Pause
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">20 --></span>
+								<span>
+									Caps lock
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">21 --></span>
+								<span>
+									Hangul
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">25 --></span>
+								<span>
+									Hanja
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">27 --></span>
+								<span>
+									Escape
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">28 --></span>
+								<span>
+									Conversion
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">29 --></span>
+								<span>
+									Non conversion
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">32 --></span>
+								<span>
+									Spacebar
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">33 --></span>
+								<span>
+									Page Up
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">34 --></span>
+								<span>
+									Page Down
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">35 --></span>
+								<span>
+									End
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">36 --></span>
+								<span>
+									Home
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">37 --></span>
+								<span>
+									Left Arrow
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">38 --></span>
+								<span>
+									Up arrow
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">39 --></span>
+								<span>
+									Right arrow
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">40 --></span>
+								<span>
+									Down arrow
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">41 --></span>
+								<span>
+									Select
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">42 --></span>
+								<span>
+									Print
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">43 --></span>
+								<span>
+									Execute
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">44 --></span>
+								<span>
+									Print Screen
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">45 --></span>
+								<span>
+									Insert
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">46 --></span>
+								<span>
+									Delete
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">47 --></span>
+								<span>
+									Help
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">48 --></span>
+								<span>
+									0
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">49 --></span>
+								<span>
+									1
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">50 --></span>
+								<span>
+									2
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">51 --></span>
+								<span>
+									3
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">52 --></span>
+								<span>
+									4
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">53 --></span>
+								<span>
+									5
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">54 --></span>
+								<span>
+									6
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">55 --></span>
+								<span>
+									7
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">56 --></span>
+								<span>
+									8
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">57 --></span>
+								<span>
+									9
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">58 --></span>
+								<span>
+									:
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">59 --></span>
+								<span>
+									; {firefox}
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">60 --></span>
+								<span>
+									< </span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">61 --></span>
+								<span>
+									Equal Key
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">63 --></span>
+								<span>
+									ß
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">64 --></span>
+								<span>
+									@ {firefox}
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">65 --></span>
+								<span>
+									A
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">66 --></span>
+								<span>
+									B
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">67 --></span>
+								<span>
+									C
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">68 --></span>
+								<span>
+									D
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">69 --></span>
+								<span>
+									E
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">70 --></span>
+								<span>
+									F
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">71 --></span>
+								<span>
+									G
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">72 --></span>
+								<span>
+									H
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">73 --></span>
+								<span>
+									I
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">74 --></span>
+								<span>
+									J
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">75 --></span>
+								<span>
+									K
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">76 --></span>
+								<span>
+									L
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">77 --></span>
+								<span>
+									M
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">78 --></span>
+								<span>
+									N
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">79 --></span>
+								<span>
+									O
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">80 --></span>
+								<span>
+									P
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">81 --></span>
+								<span>
+									Q
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">82 --></span>
+								<span>
+									R
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">83 --></span>
+								<span>
+									S
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">84 --></span>
+								<span>
+									T
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">85 --></span>
+								<span>
+									U
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">86 --></span>
+								<span>
+									V
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">87 --></span>
+								<span>
+									W
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">88 --></span>
+								<span>
+									X
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">89 --></span>
+								<span>
+									Y
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">90 --></span>
+								<span>
+									Z
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<!-- ****************** -->
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">91 --></span>
+								<span>
+									Windows | macOs {L}
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">92 --></span>
+								<span>
+									Windows {R}
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">93 --></span>
+								<span>
+									Context menu
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">95 --></span>
+								<span>
+									Sleep
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<!-- ********** -->
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">96 --></span>
+								<span>
+									0
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">97 --></span>
+								<span>
+									Numpad 1
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">99 --></span>
+								<span>
+									Numpad 2
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">99 --></span>
+								<span>
+									Numpad 3
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">100 --></span>
+								<span>
+									Numpad 4
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">101 --></span>
+								<span>
+									Numpad 5
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">102 --></span>
+								<span>
+									Numpad 6
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">103 --></span>
+								<span>
+									Numpad 7
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">104 --></span>
+								<span>
+									Numpad 8
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">105 --></span>
+								<span>
+									Numpad 9
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">106 --></span>
+								<span>
+									Multiply
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">107 --></span>
+								<span>
+									Add
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">108 --></span>
+								<span>
+									Period {firefox}
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">109 --></span>
+								<span>
+									Subtract
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">110 --></span>
+								<span>
+									Decimal point
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">111 --></span>
+								<span>
+									Divide
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<!-- ************ -->
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">112 --></span>
+								<span>
+									F1
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">113 --></span>
+								<span>
+									F2
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">114 --></span>
+								<span>
+									F3
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">115 --></span>
+								<span>
+									F4
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">116 --></span>
+								<span>
+									F5
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">117 --></span>
+								<span>
+									F6
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">118 --></span>
+								<span>
+									F7
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">119 --></span>
+								<span>
+									F8
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">120 --></span>
+								<span>
+									F9
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">121 --></span>
+								<span>
+									F10
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">122 --></span>
+								<span>
+									F11
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">123 --></span>
+								<span>
+									F12
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">124 --></span>
+								<span>
+									F13
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">125 --></span>
+								<span>
+									F14
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">126 --></span>
+								<span>
+									F15
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">127 --></span>
+								<span>
+									F16
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">128 --></span>
+								<span>
+									F17
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">129 --></span>
+								<span>
+									F18
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">130 --></span>
+								<span>
+									F19
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">131 --></span>
+								<span>
+									F20
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">132 --></span>
+								<span>
+									F21
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">133 --></span>
+								<span>
+									F22
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">134 --></span>
+								<span>
+									F23
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">135 --></span>
+								<span>
+									F24
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">136 --></span>
+								<span>
+									F25
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">137 --></span>
+								<span>
+									F26
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">138 --></span>
+								<span>
+									F27
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">139 --></span>
+								<span>
+									F28
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">140 --></span>
+								<span>
+									F29
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">141 --></span>
+								<span>
+									F30
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">142 --></span>
+								<span>
+									F31
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">143 --></span>
+								<span>
+									F32
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">144 --></span>
+								<span>
+									Num lock
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">145 --></span>
+								<span>
+									Scroll lock
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">151 --></span>
+								<span>
+									Airplane mode
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">160 --></span>
+								<span>
+									^
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">161 --></span>
+								<span>
+									!
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">162 --></span>
+								<span>
+									؛
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">163 --></span>
+								<span>
+									#
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">164 --></span>
+								<span>
+									$
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">165 --></span>
+								<span>
+									ù
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">166 --></span>
+								<span>
+									Page backward
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">167 --></span>
+								<span>
+									Page forward
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">168 --></span>
+								<span>
+									Refresh
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">170 --></span>
+								<span>
+									*
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">171 --></span>
+								<span>
+									~ + * Key
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">172 --></span>
+								<span>
+									Home key
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">173 --></span>
+								<span>
+									Mute | Unmute key
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">174 --></span>
+								<span>
+									Reduce volume
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">175 --></span>
+								<span>
+									Increase volume
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">176 --></span>
+								<span>
+									Next
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">177 --></span>
+								<span>
+									Previous
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">178 --></span>
+								<span>
+									Stop
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">179 --></span>
+								<span>
+									Play | Pause
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">180 --></span>
+								<span>
+									Email
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">181 --></span>
+								<span>
+									Mute {firefox}
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">182 --></span>
+								<span>
+									Reduce Volume {firefox}
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">183 --></span>
+								<span>
+									Increase Volume {firefox}
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">186 --></span>
+								<span>
+									Semi-colon / ñ
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">187 --></span>
+								<span>
+									Equal Sign
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">188 --></span>
+								<span>
+									Comma
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">189 --></span>
+								<span>
+									Dash
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">190 --></span>
+								<span>
+									Period
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">191 --></span>
+								<span>
+									Forward Slash {/} &
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">192 --></span>
+								<span>
+									æ
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">193 --></span>
+								<span>
+									? {/ or °}
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">194 --></span>
+								<span>
+									Numpad Period {chrome}
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">219 --></span>
+								<span>
+									Open bracket
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">220 --></span>
+								<span>
+									Back Slash {\}
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">221 --></span>
+								<span>
+									Close bracket
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">222 --></span>
+								<span>
+									Single Quote
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">223 --></span>
+								<span>
+									Backtick {`}
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">224 --></span>
+								<span>
+									Left | Right macOs {firefox}
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">225 --></span>
+								<span>
+									Altgr
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">226 --></span>
+								<span>
+									Left Back Slash
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">230 --></span>
+								<span>
+									Gnome Compose
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">231 --></span>
+								<span>
+									ç
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">233 --></span>
+								<span>
+									XF86Forward
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">234 --></span>
+								<span>
+									XF86Back
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">235 --></span>
+								<span>
+									Non conversion
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">240 --></span>
+								<span>
+									Alphanumeric
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">242 --></span>
+								<span>
+									Hiragana / Katakana
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">243 --></span>
+								<span>
+									Half Width {Full Width}
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">244 --></span>
+								<span>
+									Kanji
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item sp2">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">251 --></span>
+								<span>
+									Unlock trackpad {chrome}
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+						<div class="item">
+							<div class="after"># copied</div>
+							<div>
+								<span class="copycode">255 --></span>
+								<span>
+									Toggle touchpad
+								</span>
+							</div>
+							<div>
+								<img src="icons/copy.png">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- ************************ -->
+				<div class="foot_note">
+					Made with love by &nbsp;<a href="https://thealphaknight.com">Williams</a>
+				</div>
+			</div>
+
+
+		</div>
+
+
+
+		<script src="index.js"></script>
+</body>
+
+</html>
